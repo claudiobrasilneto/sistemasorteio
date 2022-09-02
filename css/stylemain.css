@@ -329,3 +329,138 @@ nav {
     .termosdeuso {
         padding: 30px 10px 30px 10px;
 } }
+
+
+/* SORTEIO OBJETO */
+
+.objeto-body-loop {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1200px;
+    display: flex;
+    
+}
+.col1 {
+    width: 60%;
+    background-color: blue;
+    padding: 5px 10px 5px 10px;
+}
+
+.col2 {
+    width: 40%;
+    padding: 5px 10px 5px 10px;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .objeto-body-loop {
+        width: 100%;
+        flex-wrap: wrap;
+        padding-left: 0;
+        padding-right: 0;
+    } 
+    .col1 {
+        width: 100%;
+        padding: 5px 10px 5px 10px;
+    }
+    
+    .col2 {
+        max-width: 100%;
+        padding: 5px 10px 5px 10px;
+      
+        
+    }
+}
+
+
+
+
+.tarja-title {
+    margin: 0 auto;
+    height: 40px;
+    width: 90%;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+#tarja-azul {
+    background-color: #cce5ff;
+}
+
+#tarja-verde {
+    background-color: #d4edda;
+}
+
+.sub-title-default {
+    font-size: 20px;
+    color: #094d66;
+}
+
+.lista-itens ul {
+    list-style-type: circle;
+    padding-left: 30px;
+}
+
+.sub-title-default {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212931;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form-application {
+    background-color: #26a744;
+    padding: 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-application > p {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.form-application > h2 {
+    font-weight: 800px;
+    color: white;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.input-ruge {
+    padding: 10px 15px 10px 15px;
+    width: 80%;
+    font-family: poppins;
+    border-radius: 10px;
+}
+
+#btn-cotas {
+    background-color: #fec900;
+    font-weight: 900;
+    color: white;
+}
+
+/* GALERIA */
+
+.minithumbs {
+    display: flex;
+    width: 100%;
+
+}
+
+    .minithumbs img {
+        max-width: 20%;
+    }
+
+    .capa-galeria > img {
+        width: 90%;
+    }
