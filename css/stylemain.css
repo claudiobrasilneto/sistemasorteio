@@ -342,9 +342,11 @@ nav {
     
 }
 .col1 {
+    margin: 0 auto;
     width: 60%;
     background-color: blue;
     padding: 5px 10px 5px 10px;
+    align-items: center;
 }
 
 .col2 {
@@ -366,7 +368,7 @@ nav {
     }
     
     .col2 {
-        max-width: 100%;
+        width: 100%;
         padding: 5px 10px 5px 10px;
       
         
@@ -430,7 +432,7 @@ nav {
 }
 
 .form-application > h2 {
-    font-weight: 800px;
+    font-weight: bold;
     color: white;
     font-size: 21px;
     margin-bottom: 5px;
@@ -438,6 +440,7 @@ nav {
 
 .input-ruge {
     padding: 10px 15px 10px 15px;
+    margin-bottom: 5px;
     width: 80%;
     font-family: poppins;
     border-radius: 10px;
@@ -447,20 +450,19 @@ nav {
     background-color: #fec900;
     font-weight: 900;
     color: white;
+    width: 90%;
+    padding: 10px 15px 10px 15px;
+    border: none;
 }
 
 /* GALERIA */
 
-.minithumbs {
-    display: flex;
-    width: 100%;
 
+.main-photo-gallery {
+    width: 90%;
 }
 
-    .minithumbs img {
-        max-width: 20%;
-    }
+figure img {
+    width: 100%;
+}
 
-    .capa-galeria > img {
-        width: 90%;
-    }
