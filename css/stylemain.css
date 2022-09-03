@@ -111,6 +111,9 @@ nav {
     .container-sorteios {
         flex-wrap: wrap;
 }
+    #logo {
+        height: 20px;
+    }
 }
 
 .container-sorteios > div {
@@ -344,7 +347,6 @@ nav {
 .col1 {
     margin: 0 auto;
     width: 60%;
-    background-color: blue;
     padding: 5px 10px 5px 10px;
     align-items: center;
 }
@@ -364,6 +366,7 @@ nav {
     } 
     .col1 {
         width: 100%;
+        height: 500px;
         padding: 5px 10px 5px 10px;
     }
     
@@ -372,6 +375,15 @@ nav {
         padding: 5px 10px 5px 10px;
       
         
+    }
+
+    #forma-de-pagamento-banner {
+        width: 100%;
+    }
+
+    .rolagem {
+       height: 300px !important;
+       
     }
 }
 
@@ -401,6 +413,12 @@ nav {
 
 .sub-title-default {
     font-size: 20px;
+    color: #094d66;
+}
+
+.sub-title-center  {
+    font-size: 20px;
+    font-weight: 700;
     color: #094d66;
 }
 
@@ -457,12 +475,110 @@ nav {
 
 /* GALERIA */
 
-
+/*
 .main-photo-gallery {
     width: 90%;
 }
 
 figure img {
     width: 100%;
+} */
+
+.rolagem {
+    padding: 10px;
+    height: 450px;
+    overflow: hidden;
 }
 
+
+.caixa-de-miniatura {
+    border: 1px solid #999;
+    width: 100px;
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0px;
+    overflow: hidden;
+    height: 57px;
+}
+
+#miniaturas {
+    text-align: center;
+    /*position: fixed; */
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    border-top: thin solid #757575;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #c2c1c1; 
+
+}
+
+a {
+    cursor: pointer;
+}
+
+.regras-sorteio {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.cotas-sorteio {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.number-sorteio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cota-number {
+    border-style: solid;
+    border-color: #094d66;
+    border-width: 3px;
+    border-radius: 200px;
+    margin: 5px;
+    padding: 10px;
+    
+}
+
+#btn-pagamento {
+    background-color: #fec900;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    width: 90%;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#btn-pagamento:hover {
+    transform: scale(1.1);
+}
+
+.dados-cliente {
+    display: flex;
+}
+
+.dados-cliente p {
+    font-size: 16px;
+}
+
+.dados-cliente h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #094d66;
+}
+
+.dados-cliente div {
+    padding: 10px;
+}

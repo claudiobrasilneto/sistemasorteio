@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorteio objeto</title>
+    <title>Pagamento</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/stylemain.css" />
@@ -57,9 +57,12 @@
                     <img src="./img/img-placeholder.jpg" width="100%" id="imagem03">
                 </div>
                 <div id="miniaturas">
-                    <div class="caixa-de-miniatura"><a href="#imagem01"><img src="./img/img-placeholder.jpg" width="100%"></a></div>
-                    <div class="caixa-de-miniatura"><a href="#imagem02"><img src="./img/img-placeholder.jpg" width="100%"></a></div>
-                    <div class="caixa-de-miniatura"><a href="#imagem03"><img src="./img/img-placeholder.jpg" width="100%"></a></div>
+                    <div class="caixa-de-miniatura"><a href="#imagem01"><img src="./img/img-placeholder.jpg"
+                                width="100%"></a></div>
+                    <div class="caixa-de-miniatura"><a href="#imagem02"><img src="./img/img-placeholder.jpg"
+                                width="100%"></a></div>
+                    <div class="caixa-de-miniatura"><a href="#imagem03"><img src="./img/img-placeholder.jpg"
+                                width="100%"></a></div>
 
                 </div>
 
@@ -68,42 +71,62 @@
                     <img src="./img/img-placeholder.jpg">
                 </figure> -->
             </div>
-            </div>
-
+           
             <div class="col2">
                 <div class="tarja-title" id="tarja-verde">
-                    <h2>O VALOR DA COTA É R$ 13,00</h2>
+                    <h2>DADOS DE PAGAMENTO</h2>
                 </div>
                 <section class="lista-itens">
-                    <h2 class="sub-title-default">SORTEIO DE EXEMPLO</h2>
-                    <ul>
-                        <li>Sorteios ilimitados</li>
-                        <li>Sorteios ilimitados</li>
-                        <li>Sorteios ilimitados</li>
-                        <li>Sorteios ilimitados</li>
-                        <li>Sorteios ilimitados</li>
-                        <li>Sorteios ilimitados</li>
-                        <li>Sorteios ilimitados</li>
-                        <li>Sorteios ilimitados</li>
-                    </ul>
+                    <h2 class="sub-title-default">REGRAS DO SORTEIO</h2>
+                    <p class="regras-sorteio">O ganhador(a) será aquele(a) que tiver o número do Cupom igual aos 5 últimos números do <strong>1º Prêmio
+                        da Loteria Federal.</strong><br>
+
+                        Caso o número correspondente ao 1º Prêmio não tenha sido comercializado será considerado os 5
+                        últimos números do 2º Prêmio e assim sucessivamente até o 5º Prêmio.<br>
+
+                        Caso nenhum número do concurso tenha sido comercializado, será considerado o sorteio do próximo
+                        concurso.<br>
+
+                        <strong>OS NÚMEROS DA SORTE SÃO ENVIADOS ALEATORIAMENTE PELO SISTEMA APÓS CONFIRMAÇÃO DO PEDIDO EM ATÉ
+                        72H.</strong><br><br>
+                    </p>
+                    <div class="dados-cliente">
+                        <div class="col1-dados-cliente">
+                            <h2>Cliente</h2>
+                            <p>Cliente Beltrão Teste</p><br><br>
+                            <h2>Sorteio</h2>
+                            <p>Objeto teste</p><br><br>
+                            <h2>Status do pedido</h2>
+                            <p>Aguardando pagamento</p><br><br>
+                        </div>
+                        <div class="col2-dados-cliente">
+                            <h2>Valor Total</h2>
+                            <p>R$ 12,99</p><br><br>
+                            <h2>Data do Pedido</h2>
+                            <p>22/08/2022 14:24:08</p><br><br>
+                            <h2>Pagamento até</h2>
+                            <p>22/08/2022 14:29:08</p><br><br>
+                            
+                        </div>
+                    </div>
 
                 </section>
-                <div class="form-application">
-                    <h2>Números da Sorte</h2>
-                    <p>Selecione a quantidade de números que você deseja e em seguida aperte no botão comprar. O sistema
-                        irá gerar números aleatórios e enviá-los para você no seu email após a aprovação do pagamento.
-                    </p>
-                    <form>
-                        <input type="text" name="nome" id="nome-field" class="input-ruge" placeholder="Digite seu nome">
-                        <input type="number" name="CPF" id="cpf-field" class="input-ruge" placeholder="Digite seu CPF">
-                        <input type="email" name="email" id="email-field" class="input-ruge"
-                            placeholder="Digite seu melhor e-mail">
-                        <input type="number" name="telefone" id="phone-field" class="input-ruge"
-                            placeholder="DDD + Telefone">
-                        <input type="number" name="cotas" id="cotas-field" class="input-ruge"
-                            placeholder="Digite a quantidade de cotas">
-                        <input type="submit" value="COMPRAR COTAS" id="btn-cotas">
-                    </form>
+                <div class="cotas-sorteio">
+                    <HR>
+                    <h2 class="sub-title-center">COTAS DO SORTEIO</h2><br>
+                    <div class="number-sorteio">
+                        <div class="cota-number"><p>43677</p></div>
+                        <div class="cota-number"><p>43677</p></div>
+                        <div class="cota-number"><p>43677</p></div>
+                        <div class="cota-number"><p>43677</p></div>
+                        <div class="cota-number"><p>43677</p></div>
+                        <div class="cota-number"><p>43677</p></div>
+                        <div class="cota-number"><p>43677</p></div>
+                        <div class="cota-number"><p>43677</p></div>
+                        <div class="cota-number"><p>43677</p></div>
+                    </div><br>
+                    <button id="btn-pagamento">EFETUAR PAGAMENTO</button>
+                   
                 </div>
             </div>
 
